@@ -137,6 +137,7 @@ class IOLoop(object):
                 def __init__(self, io_loop=None):
                     self.io_loop = io_loop or IOLoop.instance()
         """
+        #-------------------单例模式-----------------------------------------------------------------------------#
         if not hasattr(cls, "_instance"):
             cls._instance = cls()
         return cls._instance
